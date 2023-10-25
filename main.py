@@ -39,5 +39,5 @@ print("Flight Prices from Different Countries:")
 for country, price in country_prices.items():
    print(f"{country}: {price}")
 
-print(f"The cheapest option is from {cheapest_country} with a price of {country_prices[cheapest_country]}")
+print(f"The cheapest option is from {cheape:1,$d
 
