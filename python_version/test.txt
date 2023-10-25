@@ -1,0 +1,15 @@
+curl --user "rokas2020:Rokas2020" \
+'https://realtime.oxylabs.io/v1/queries' \
+-H "Content-Type: application/json" \
+-d '{"source": "universal", "url": "https://www.expedia.com/Hotel-Search?rooms=1&adults=2&destination=Barcelona&startDate=2023-08-16&endDate=2023-08-18&d1=2023-08-16&d2=2023-08-18", "render": "html"}'
+
+https://www.expedia.com/Hotel-Search?rooms=1&adults=2&destination=Barcelona&startDate=2023-08-16&endDate=2023-08-18&d1=2023-08-16&d2=2023-08-18
+
+  https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip&leg1=from:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),to:Oslo,%20Norway%20(OSL-Gardermoen),departure:11/8/2023TANYT&leg2=from:Oslo,%20Norway%20(OSL-Gardermoen),to:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),departure:11/9/2023TANYT&options=cabinclass:economy&fromDate=11/8/2023&toDate=11/9/2023&d1=2023-11-8&d2=2023-11-9&passengers=adults:1,infantinlap:N
+
+    curl --user "rokas2020:Rokas2020" \
+'https://realtime.oxylabs.io/v1/queries' \
+-H "Content-Type: application/json" \
+-d '{"source": "universal", "url": "https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip&leg1=from:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),to:Oslo,%20Norway%20(OSL-Gardermoen),departure:11/8/2023TANYT&leg2=from:Oslo,%20Norway%20(OSL-Gardermoen),to:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),departure:11/9/2023TANYT&options=cabinclass:economy&fromDate=11/8/2023&toDate=11/9/2023&d1=2023-11-8&d2=2023-11-9&passengers=adults:1,infantinlap:N", "render": "html"}'
+
+https://realtime.oxylabs.io/v1/queries?source=universal&url=https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip&leg1=from:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),to:Oslo,%20Norway%20(OSL-Gardermoen),departure:11/8/2023TANYT&leg2=from:Oslo,%20Norway%20(OSL-Gardermoen),to:Vilnius,%20Lithuania%20(VNO-Vilnius%20Intl.),departure:11/9/2023TANYT&options=cabinclass:economy&fromDate=11/8/2023&toDate=11/9/2023&d1=2023-11-8&d2=2023-11-9&passengers=adults:1,infantinlap:N&render=html&access_token=12345abcde
