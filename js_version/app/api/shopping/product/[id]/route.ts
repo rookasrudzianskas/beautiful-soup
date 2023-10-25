@@ -1,18 +1,12 @@
 import {NextResponse} from "next/server";
 // import {ProductData} from "@/typings";
 
-type Params = { params: {id: string}}
+
+const URL = "https://www.expedia.com/Hotel-Search?rooms=1&adults=2&destination=Barcelona&startDate=2023-08-16&endDate=2023-08-18&d1=2023-08-16&d2=2023-08-18"
 
 export async function GET(
   request: Request,
-  {params: {id}} : Params
 ) {
-  if(!id) {
-    return NextResponse.next(
-      new Response("ID is required", {status: 400})
-    )
-  }
-
   const response = await fetch('https://realtime.oxylabs.io/v1/queries', {
     method: 'POST',
     headers: {
@@ -21,9 +15,9 @@ export async function GET(
     },
     cache: 'no-store',
     body: JSON.stringify({
-      source: 'google_shopping_product',
-      domain: 'com',
-      query: id,
+      source: 'universal',
+      url: URL,
+      render: "html",
       parse: true,
     })
   });
